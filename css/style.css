@@ -1,0 +1,25 @@
+h1 {
+  text-align: center;
+  font-family:'Optima', Futara, 'Calibri', 'Lucida Sans', 'Arial', sans-serif;
+  margin-left: 2.5%;
+  color: #0F2557;
+  font-style: oblique;
+}
+
+table {
+  text-align: left;
+  border: solid 2px #150734;
+  background-color: #CAE7DF;
+  font-family: Candara, 'Segoe UI', 'Calibri', 'Trebuchet MS', sans-serif;
+  margin-left: 2.5%;;
+  border-style: double;
+  color: #0F2557;
+}
+
+th {
+  padding: 5px;
+  text-decoration: underline #0F2557;;
+}
+td {
+  padding: 14px;
+}
