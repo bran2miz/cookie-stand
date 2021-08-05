@@ -90,7 +90,7 @@ function renderActualTable() {
     shopCellElem3.textContent = 'Total Cookies: ' + actualShop.cookieTotal;
     shopTableElem.appendChild(shopCellElem3);
   }
-}
+};
 
 function renderFooterTable() {
   const footerElem = document.createElement('tr');
@@ -119,7 +119,7 @@ function renderFooterTable() {
   const shopCellElem3 = document.createElement('td');
   shopCellElem3.textContent = `Ultimate Total: ` + cookieDailyTotal;
   footerElem.appendChild(shopCellElem3);
-}
+};
 
 renderNewHeader();
 renderActualTable();
