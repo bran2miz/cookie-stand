@@ -4,14 +4,17 @@ h1 {
   margin-left: 2.5%;
   color: #0F2557;
   font-style: oblique;
+  font-size: 40px;
+  padding:1rem;
 }
 
 table {
+  align-self: center;
   text-align: left;
   border: solid 2px #150734;
   background-color: #CAE7DF;
   font-family: Candara, 'Segoe UI', 'Calibri', 'Trebuchet MS', sans-serif;
-  margin-left: 2.5%;;
+  margin-left: 2.5%;
   border-style: double;
   color: #0F2557;
 }
@@ -22,4 +25,55 @@ th {
 }
 td {
   padding: 14px;
+}
+
+body{
+  background-color: #88B2CC;
+}
+
+header {
+  width: 100%;
+  background-color: #658EA9;
+  display: flex;
+  border-bottom: #E7D4C0 4px solid;
+  
+}
+
+nav {
+  margin: 0 auto;
+  width: 960px;
+  display: flex;
+  
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  
+}
+
+nav ul li a {
+  /* padding: 1rem;
+  margin: 40px; */
+  display: inline;
+  color: black;
+  padding: 1rem;
+  margin:50px;
+  font-size: larger;
+  /* right: 0px; */
+  justify-content: center;
+  font-family: 'Oswald', sans-serif;;
+}
+
+header img {
+  height: 70px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  align-items: flex-end;
+}
+
+nav a {
+  color:lightgray;
+  text-decoration: none;
+  
 }
