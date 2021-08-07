@@ -6,6 +6,16 @@ h1 {
   font-style: oblique;
   font-size: 40px;
   padding:1rem;
+  align-self: center;
+}
+
+h3 {
+  text-align: center;
+  font-family:'Optima', Futara, 'Calibri', 'Lucida Sans', 'Arial', sans-serif;
+  color: #0F2557;
+  font-style: oblique;
+  font-size: 30px;
+  padding:1rem;
 }
 
 table {
@@ -14,13 +24,14 @@ table {
   border: solid 2px #150734;
   background-color: #CAE7DF;
   font-family: Candara, 'Segoe UI', 'Calibri', 'Trebuchet MS', sans-serif;
-  margin-left: 2.5%;
+  /* margin-left: 2.5%; */
   border-style: double;
   color: #0F2557;
+  
 }
 
 th {
-  padding: 5px;
+  padding: 2px;
   text-decoration: underline #0F2557;;
 }
 td {
@@ -76,4 +87,45 @@ nav a {
   color:lightgray;
   text-decoration: none;
   
+}
+
+footer {
+  background-color:#658EA9;
+  padding: 25px;
+  display: flex;
+  margin-top: 30px;
+  border-top: #E7D4C0 4px solid;
+  justify-content: space-between;
+}
+
+footer p {
+  padding: 5px;
+  color: white;
+} 
+
+section {
+  display: flex;
+  padding: 30px;
+  /* background-color: rgb(249, 251, 253);
+  border:rgb(235, 244, 252) 1px solid; */
+  width: 960px;
+}
+
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+section:nth-child(1) {
+  display: flex;
+  margin: 30px;
+  flex-wrap: wrap;
+}
+
+section:nth-child(2) {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
 }
