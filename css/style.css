@@ -129,3 +129,7 @@ section:nth-child(2) {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+main {
+  display: flex;
+}
