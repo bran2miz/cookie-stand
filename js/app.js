@@ -52,10 +52,51 @@ const lima = new Cookieshop('Lima', 2, 16, 0.6);
 
 console.log(Cookieshop.prototype.shopArray);
 
+function newForm(event) {
+  event.preventDefault();
+  let location = event.target.location.value;
+  let minCust = event.target.minCust.value;
+  let maxCust = event.target.maxCust.value;
+  let avgCook = event.target.avgCook.value;
+
+  for (let i = 0; i < Cookieshop.prototype.shopArray.length; i++) {
+    let newShop = Cookieshop.prototype.shopArray[i];
+    if(location === newShop.location) {
+      newShop.minCust = event.target.minCust.value;
+      newShop.maxCust = event.target.maxCust.value;
+      newShop.avgCook = event.target.avgCook.value;
+      newShop.callUponAll();
+      break;
+    }
+    else if (Cookieshop.prototype.shopArray.length === (i+1)) {
+      const newStore = new Cookieshop(location, minCust, maxCust, avgCook);
+      break;}
+    }
+    parseInt(event.target.reset());
+    clearSalesTable();
+    renderNewHeader();
+    renderActualTable();
+    renderFooterTable();
+  }
+
+
+console.log(Cookieshop.prototype.shopArray);
+
+
+
+const storeFormElem = document.getElementById('salesForm');
+storeFormElem.addEventListener('submit', newForm);
+
 const divElem = document.getElementById(`sales`);
 
-const newTableElem = document.createElement('table');
+let newTableElem = document.createElement('table');
 divElem.appendChild(newTableElem);
+
+function clearSalesTable() {
+  divElem.removeChild(newTableElem);
+  newTableElem = document.createElement('table');
+  divElem.appendChild(newTableElem);
+}
 
 function renderNewHeader() {
   const rowHeader = document.createElement('tr');
@@ -121,9 +162,12 @@ function renderFooterTable() {
   footerElem.appendChild(shopCellElem3);
 };
 
+
 renderNewHeader();
 renderActualTable();
 renderFooterTable();
+
+
 // const totalShop = {
 //   cookieLocation: '',
 //   minCust: 0,
