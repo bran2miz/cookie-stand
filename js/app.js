@@ -70,6 +70,7 @@ function CookieStore (city, min, max, avg) {
   const tableCookies = document.getElementById('sales');
   
   const newTableCookies = document.createElement('table');
+  newTableCookies.setAttribute('id','sale');
   tableCookies.appendChild(newTableCookies);
 
   function renderNewHeader(){
@@ -158,12 +159,16 @@ function renderFooterTable(){
       avgCust
     );
       
-    tfoot.innerHTML = '';
-    newStore.renderTableRow();
-    // renderNewHeader();
-    //renderActualTable();
-    renderFooterTable();
-
+    // tfoot.innerHTML = '';
+    // newStore.renderTableRow();
+    // // renderNewHeader();
+    // //renderActualTable();
+    // renderFooterTable();
+let tableElem = document.getElementById('sale');
+tableElem.innerHTML = '';
+renderNewHeader();
+renderActualTable();
+renderFooterTable();
 
   //   clearAllForm();
 
