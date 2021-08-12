@@ -158,28 +158,13 @@ function renderFooterTable(){
       maxCust,
       avgCust
     );
-      
-    // tfoot.innerHTML = '';
-    // newStore.renderTableRow();
-    // // renderNewHeader();
-    // //renderActualTable();
-    // renderFooterTable();
+
 let tableElem = document.getElementById('sale');
 tableElem.innerHTML = '';
 renderNewHeader();
 renderActualTable();
 renderFooterTable();
 
-  //   clearAllForm();
-
-  //   function clearAllForm(){
-  //   event.target.newLocation.value = null;
-  //   event.target.newMinCust.value = null;
-  //   event.target.maxCust.value = null;
-  //   event.target.avgCust.value = null;
-  // }
 }
-
-
   myForm.addEventListener('submit', handleSubmit);
 
